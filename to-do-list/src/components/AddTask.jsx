@@ -7,7 +7,8 @@ export function AddTask({ onAddTask }) {
     
     function handleSubmit(event) {
         event.preventDefault();
-        onAddTask(title)
+        onAddTask(title);
+        setTitle('');
     }
 
     function onChangeTitle(event) {
@@ -16,7 +17,7 @@ export function AddTask({ onAddTask }) {
 
     return(
         <form onSubmit={handleSubmit} className="form">
-            <input type="text" placeholder="add a new task" className="input" value={title} onChange={onChangeTitle}/>
+            <input type="text" placeholder="Add a new task" className="input" value={title} onChange={onChangeTitle}/>
             <button className='button'>Create</button>
         </form>
     )

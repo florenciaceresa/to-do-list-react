@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    padding: 30px;
+    padding: 0 0 30px;
     justify-content: space-between;
 }
 
@@ -8,26 +8,29 @@
     width: 350px;
     height: 30px;
     border: none;
-    background-color: rgb(206, 205, 205);
+    background-color: #faf1f1;
     border-radius: 3px;
+    padding: 10px;
+
 }
 
 .input::placeholder {
     font-size: 14px;
-    padding: 10px;
+    color: #211a1a;
 }
 
 .button {
-    background-color: palevioletred;
+    background-color: #9d4147;
     border: none;
     width: 75px;
-    border-radius: 3px;
+    border-radius: 25px;
     color: #fff;
     font-size: 14px;
 }
 
 .button:hover {
     cursor: pointer;
+    background-color: #db868b;
 }
 
 

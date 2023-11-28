@@ -1,21 +1,30 @@
 .task {
     width: 440px;
     height: 40px ;
-    background-color: rgb(206, 205, 205);
+    background-color: #faf1f1;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px auto;
-    padding: 0 6px ;
+    margin: 20px auto 0;
+    padding: 0 8px ;
+    font-size: 14px;
   }
 
+
   .check-container {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border: none;
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 50%;
+    border: 1px solid #9d4147;
+    align-items: center;
+    display: flex;
+  }
+
+  .check-container:hover {
+    cursor: pointer;
   }
 
   .delete-button {
@@ -24,11 +33,19 @@
   }
 
   .delete {
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1.2rem;
+    color: #9d4147;
   }
 
   .delete:hover {
     cursor: pointer;
+  }
+
+  .task-completed {
+    text-decoration: line-through;
+  }
+
+  .icon-completed {
+    color: #9d4147;
   }
 

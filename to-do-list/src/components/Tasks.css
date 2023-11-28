@@ -1,11 +1,11 @@
 .tasks {
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .task-header {
     display: flex;
-    padding: 0 30px;
     justify-content: space-between;
 }
 
@@ -20,5 +20,6 @@
 }
 
 .task-header div span {
-    color: palevioletred;
+    color: #9d4147;
+    font-weight: 600;
 }
