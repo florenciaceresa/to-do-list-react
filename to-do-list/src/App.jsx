@@ -1,12 +1,23 @@
 import { useState } from 'react'
-import { Header } from './components/ToDo'
+import { ToDo } from './components/ToDo'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState([]);
+
+  function addTask(TaskTitle) {
+    setTasks([
+      ...tasks,
+      {
+        id: crypto.randomUUID(),
+        title: TaskTitle,
+        isCompleted: false
+      }
+    ]);
+  }
 
   return (
     <>
-    <Header/>
+    <ToDo onAddTask={addTask}/>
       
     </>
   )

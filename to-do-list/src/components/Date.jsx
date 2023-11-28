@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Date.css'
 
 export function Fecha() {
     const [fechaActual, setFechaActual] = useState(new Date());
@@ -17,11 +18,9 @@ export function Fecha() {
   const formatoMonth = { month: 'long' };
 
   return (
-    <div>
-      <h1>Fecha actual:</h1>
-      <p>{fechaActual.toLocaleDateString('en-US', Weekday)}, {fechaActual.toLocaleDateString('en-US', Day)}</p>
-      <p>{fechaActual.toLocaleDateString('en-US', formatoMonth)}</p>
-
+    <div className='date-container'>
+      <p className='date'>{fechaActual.toLocaleDateString('en-US', Weekday)}, {fechaActual.toLocaleDateString('en-US', Day)}</p>
+      <p className='month'>{fechaActual.toLocaleDateString('en-US', formatoMonth)}</p>
     </div>
   );
 }

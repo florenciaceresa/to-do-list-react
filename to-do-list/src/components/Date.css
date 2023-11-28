@@ -1,0 +1,15 @@
+.date-container {
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+}
+
+.date {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: palevioletred;
+}
+
+.month {
+    color: #c7c5c5;
+}

@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.input {
+    width: 350px;
+    height: 30px;
+    border: none;
+    background-color: rgb(206, 205, 205);
+    border-radius: 3px;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.button {
+    background-color: palevioletred;
+    border: none;
+    width: 75px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
